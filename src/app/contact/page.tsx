@@ -1,6 +1,6 @@
 export default function ContactPage() {
   const contactInfo = [
-    { label: "Email", value: "hectorsedo@gmail.com", href: "mailto:hectorsedo@gmail.com" },
+    { label: "Email", value: "contact@hectorsedo.com", href: "mailto:contact@hectorsedo.com" },
     { label: "WhatsApp", value: "+229 01 15 59 50 828", href: "https://wa.me/22901155950828" },
     { label: "Localisation", value: "Cotonou, Bénin", href: null },
     { label: "Statut", value: "Ouvert aux opportunités", href: null },
