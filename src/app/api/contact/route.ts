@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
@@ -21,10 +24,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Configuration email (à remplacer par votre service d'email)
+    // Configuration email professionnel
     const emailData = {
+      from: 'contact@hectorsedo.com',
       to: 'contact@hectorsedo.com',
-      from: 'noreply@hectorsedo.com',
       subject: `Nouveau message: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -45,17 +48,13 @@ export async function POST(request: NextRequest) {
       `,
     };
 
-    // Pour l'instant, on simule l'envoi d'email
-    // TODO: Configurer un vrai service d'email (Resend, SendGrid, etc.)
-    console.log('Email à envoyer:', emailData);
-
-    // Simulation d'un délai d'envoi
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Envoi de l'email principal
+    await resend.emails.send(emailData);
 
     // Email de confirmation à l'utilisateur
     const confirmationEmail = {
-      to: email,
       from: 'contact@hectorsedo.com',
+      to: email,
       subject: 'Confirmation de réception - Hector SEDO',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -78,7 +77,8 @@ export async function POST(request: NextRequest) {
       `,
     };
 
-    console.log('Email de confirmation à envoyer:', confirmationEmail);
+    // Envoi de l'email de confirmation
+    await resend.emails.send(confirmationEmail);
 
     return NextResponse.json(
       { message: 'Message envoyé avec succès' },
@@ -86,9 +86,9 @@ export async function POST(request: NextRequest) {
     );
 
   } catch (error) {
-    console.error('Erreur lors du traitement du formulaire:', error);
+    console.error('Erreur lors de l\'envoi d\'email:', error);
     return NextResponse.json(
-      { error: 'Erreur interne du serveur' },
+      { error: 'Erreur lors de l\'envoi du message' },
       { status: 500 }
     );
   }
