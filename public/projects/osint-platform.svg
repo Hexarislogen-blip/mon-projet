@@ -1,0 +1,47 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background noir et blanc -->
+  <rect width="400" height="250" fill="#0a0a0a"/>
+  
+  <!-- Header -->
+  <text x="20" y="30" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">OSINT Passive Platform</text>
+  
+  <!-- Main Interface -->
+  <rect x="20" y="50" width="360" height="180" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  
+  <!-- Search Input -->
+  <rect x="30" y="60" width="340" height="35" rx="4" fill="#2a2a2a"/>
+  <text x="40" y="80" fill="#ffffff" font-family="monospace" font-size="10">🔍 target-domain.com</text>
+  
+  <!-- Data Sources -->
+  <rect x="30" y="105" width="80" height="40" rx="4" fill="#ffffff"/>
+  <text x="40" y="120" fill="#000000" font-family="Arial" font-size="9" font-weight="bold">DNS</text>
+  <text x="40" y="135" fill="#666666" font-family="Arial" font-size="8">• Subdomains</text>
+  
+  <rect x="120" y="105" width="80" height="40" rx="4" fill="#ffffff"/>
+  <text x="130" y="120" fill="#000000" font-family="Arial" font-size="9" font-weight="bold">Social</text>
+  <text x="130" y="135" fill="#666666" font-family="Arial" font-size="8">• Profiles</text>
+  
+  <rect x="210" y="105" width="80" height="40" rx="4" fill="#ffffff"/>
+  <text x="220" y="120" fill="#000000" font-family="Arial" font-size="9" font-weight="bold">Public</text>
+  <text x="220" y="135" fill="#666666" font-family="Arial" font-size="8">• Records</text>
+  
+  <rect x="300" y="105" width="60" height="40" rx="4" fill="#ffffff"/>
+  <text x="310" y="120" fill="#000000" font-family="Arial" font-size="9" font-weight="bold">Leaks</text>
+  <text x="310" y="135" fill="#666666" font-family="Arial" font-size="8">• Data</text>
+  
+  <!-- Results Panel -->
+  <rect x="30" y="155" width="340" height="65" rx="4" fill="#ffffff"/>
+  <text x="40" y="170" fill="#000000" font-family="Arial" font-size="10" font-weight="bold">📊 INTELLIGENCE SUMMARY</text>
+  <text x="40" y="185" fill="#666666" font-family="monospace" font-size="8">• 12 subdomains found</text>
+  <text x="40" y="195" fill="#666666" font-family="monospace" font-size="8">• 5 social media profiles</text>
+  <text x="40" y="205" fill="#666666" font-family="monospace" font-size="8">• 3 email addresses exposed</text>
+  <text x="40" y="215" fill="#666666" font-family="monospace" font-size="8">⚠ 2 potential vulnerabilities detected</text>
+  
+  <!-- Privacy Indicator -->
+  <rect x="320" y="65" width="50" height="20" rx="10" fill="#ffffff"/>
+  <text x="335" y="78" fill="#000000" font-family="Arial" font-size="8" font-weight="bold">100% Private</text>
+  
+  <!-- Zero Backend Badge -->
+  <circle cx="350" cy="135" r="15" fill="#ffffff"/>
+  <text x="340" y="140" fill="#000000" font-family="Arial" font-size="8">Zero</text>
+</svg>

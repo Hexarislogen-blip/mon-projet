@@ -1,0 +1,36 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background noir et blanc -->
+  <rect width="400" height="250" fill="#0a0a0a"/>
+  
+  <!-- Header -->
+  <text x="20" y="30" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">HashBJ - Ultra Fast Hash Identifier</text>
+  
+  <!-- Main Interface -->
+  <rect x="20" y="50" width="360" height="180" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  
+  <!-- Input Hash -->
+  <rect x="30" y="60" width="340" height="40" rx="4" fill="#2a2a2a"/>
+  <text x="40" y="75" fill="#ffffff" font-family="monospace" font-size="10">d41d8cd98f00b204e9800998ecf8427e</text>
+  <text x="40" y="90" fill="#888" font-family="Arial" font-size="8">Paste hash to identify</text>
+  
+  <!-- Speed Indicator -->
+  <circle cx="350" cy="80" r="15" fill="#ffffff"/>
+  <text x="340" y="85" fill="#000000" font-family="Arial" font-size="8" font-weight="bold">&lt;100ms</text>
+  
+  <!-- Detection Results -->
+  <rect x="30" y="110" width="340" height="50" rx="4" fill="#ffffff"/>
+  <text x="40" y="125" fill="#000000" font-family="Arial" font-size="12" font-weight="bold">✓ ALGORITHM IDENTIFIED</text>
+  <text x="40" y="140" fill="#666666" font-family="Arial" font-size="10">MD5 - 128-bit cryptographic hash</text>
+  <text x="40" y="155" fill="#666666" font-family="Arial" font-size="9">⚠ WEAK - Not recommended for security</text>
+  
+  <!-- Algorithm Database -->
+  <rect x="30" y="170" width="340" height="50" rx="4" fill="#ffffff"/>
+  <text x="40" y="185" fill="#000000" font-family="Arial" font-size="10" font-weight="bold">🗄️ DATABASE: 30+ ALGORITHMS</text>
+  <text x="40" y="198" fill="#666666" font-family="monospace" font-size="8">MD5 SHA1 SHA256 SHA512 bcrypt Argon2 scrypt</text>
+  <text x="40" y="210" fill="#666666" font-family="Arial" font-size="8">RIPEMD160 Whirlpool Tiger HAVAL Panama</text>
+  
+  <!-- Recommendations -->
+  <rect x="200" y="120" width="160" height="35" rx="4" fill="#ffffff"/>
+  <text x="210" y="135" fill="#000000" font-family="Arial" font-size="9" font-weight="bold">RECOMMENDATIONS</text>
+  <text x="210" y="148" fill="#666666" font-family="Arial" font-size="8">• Use SHA-256 or better</text>
+</svg>
