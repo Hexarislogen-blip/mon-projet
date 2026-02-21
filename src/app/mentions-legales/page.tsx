@@ -36,7 +36,7 @@ export default function MentionsLegalesPage() {
             <p className="text-sm text-[var(--fg-muted)] leading-relaxed">
               Professionnel indépendant basé à Cotonou, Bénin.<br />
               Email : hectorsedo@gmail.com<br />
-              Tél : +229 01 155 950 828
+              Tél : +229 01 55 95 08 28
             </p>
           </div>
           <div className="bg-[var(--bg)] p-7 space-y-3">

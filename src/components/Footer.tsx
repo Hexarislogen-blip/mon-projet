@@ -30,7 +30,7 @@ export default function Footer() {
             <p className="section-label">Contact</p>
             <ul className="space-y-2.5">
               {[
-                { label: "WhatsApp", href: "https://wa.me/2290155950828" },
+                { label: "WhatsApp", href: "https://wa.me/22955950828" },
                 { label: "Email", href: "mailto:hectorsedo@gmail.com" },
               ].map((l) => (
                 <li key={l.label}>

@@ -277,7 +277,7 @@ export default function HomePage() {
                 <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </Link>
-            <Link href="https://wa.me/2290155950828" target="_blank" className="btn-ghost">
+            <Link href="https://wa.me/22955950828" target="_blank" className="btn-ghost">
               WhatsApp
             </Link>
           </div>

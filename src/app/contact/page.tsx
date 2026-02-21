@@ -17,7 +17,7 @@ export default function ContactPage() {
 
   const contactInfo = [
     { label: "Email", value: "hectorsedo@gmail.com", href: "mailto:hectorsedo@gmail.com" },
-    { label: "WhatsApp", value: "+229 01 15 59 50 828", href: "https://wa.me/22901155950828" },
+    { label: "WhatsApp", value: "+229 01 55 95 08 28", href: "https://wa.me/22955950828" },
     { label: "Localisation", value: "Cotonou, Bénin", href: null },
     { label: "Statut", value: "Ouvert aux opportunités", href: null },
   ];
@@ -29,7 +29,7 @@ export default function ContactPage() {
     setResponseMessage('');
 
     try {
-      const response = await fetch('/api/contact.php', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
